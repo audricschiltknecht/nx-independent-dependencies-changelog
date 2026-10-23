@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "release": {
+    "projects": ["app"],
+    "projectsRelationship": "independent",
+    "git": { "commit": false, "tag": true, "push": false },
+    "version": { "conventionalCommits": true },
+    "changelog": {
+      "projectChangelogs": { "file": "{projectRoot}/CHANGELOG.md" }
+    }
+  }
+}
